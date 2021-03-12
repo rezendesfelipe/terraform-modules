@@ -9,7 +9,7 @@ locals {
             resource_group_name         = "Root"
             location                    = "brazilsouth"
             env_ref                     = "root"
-            #Front-Door's development environment
+            #Front-Door's base environment
             frondoor_name       = "frontdoor-root-cloudzilla"
             host_name           = "frontdoor-root-cloudzilla.azurefd.net"
             load_balancing_name = "frontdoor-load-balance"
@@ -34,7 +34,7 @@ locals {
             resource_group_name         = "Homolog"
             location                    = "brazilsouth"
             env_ref                     = "hmg"
-            #Front-Door's development environment            
+            #Front-Door's homolog environment            
             frondoor_name       = "frontdoor-hmg-cloudzilla"
             host_name           = "frontdoor-hmg-cloudzilla.azurefd.net"
             load_balancing_name = "frontdoor-load-balance"
@@ -46,7 +46,7 @@ locals {
             resource_group_name         = "Production"
             location                    = "brazilsouth"
             env_ref                     = "prd"
-            #Front-Door's development environment            
+            #Front-Door's production environment            
             frondoor_name       = "frontdoor-prd-cloudzilla"
             host_name           = "frontdoor-prd-cloudzilla.azurefd.net"
             load_balancing_name = "frontdoor-load-balance"
